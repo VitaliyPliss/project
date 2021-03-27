@@ -80,20 +80,19 @@
             }
         }
     }
-    &__autorization {
-        margin-left: 20px;
-        &-button1 {
-            width: 87px;
-            height: 34px;
-            font-size: 12px;
+    &__divider {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 1px;
+            background: rgba(31, 32, 65, 0.1);
+            top: -14px;
+            left: 20px;
         }
-        &-button2 {
-            width: 196px;
-            height: 34px;
-            margin-left: 20px;
-            font-size: 12px;
-        }
-        
     }
-
+    &__autorization {
+        margin-left: 40px;
+    }
 }
