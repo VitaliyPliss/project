@@ -1,0 +1,25 @@
+block links 
+    link(rel="stylesheet", href="../../blocks/header_guest/css/header_guest.min.css")
+
+block content
+    section.header 
+        .container 
+            .navbar 
+                .navbar__logo
+                    img.navbar__logo-img(src="../../blocks/header_guest/icons/logo.svg", alt="#")
+                .navbar__wrapper
+                    .navbar__menu
+                        ul.navbar__menu-list
+                            li
+                                a(href="#").navbar__menu-item <span> О нас </span> 
+                            li
+                                a(href="").navbar__menu-item.navbar__services Услуги
+                            li 
+                                a(href="#").navbar__menu-item Вакансии 
+                            li 
+                                a(href="#").navbar__menu-item Новости 
+                            li 
+                                a(href="#").navbar__menu-item.navbar__agreements Соглашения   
+                    .navbar__autorization
+                        button.navbar__autorization-button1.btn_empty войти
+                        button.navbar__autorization-button2.btn_filled зарегистрироваться

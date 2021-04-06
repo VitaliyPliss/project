@@ -1,0 +1,2 @@
+.text-field{margin-top:22px;width:260px;height:44px;border:1px solid var(--d25-color);border-radius:4px}.text-field:hover{border:1px solid var(--d50-color)}.text-field:hover::-ms-input-placeholder{color:red}input::-webkit-input-placeholder{color:var(--d25-color)}input::-moz-placeholder{color:var(--d25-color)}
+/*# sourceMappingURL=text_field.min.css.map */
