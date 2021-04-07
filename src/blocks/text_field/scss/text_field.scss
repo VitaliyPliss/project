@@ -6,10 +6,7 @@
     border-radius: 4px;
     &:hover {
         border: 1px solid var(--d50-color);
-        &::-ms-input-placeholder {
-            color: red;
-          }
-    }
+        }
 }
 
 input::-webkit-input-placeholder {
@@ -18,3 +15,7 @@ input::-webkit-input-placeholder {
 input::-moz-placeholder {
     color: var(--d25-color);
    }
+
+input:hover::placeholder {
+    color: var(--d75-color);
+  }
