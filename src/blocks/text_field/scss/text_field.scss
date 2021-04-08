@@ -1,12 +1,18 @@
 .text-field {
     margin-top: 22px;
-    width: 260px;
+    width: 320px;
     height: 44px;
     border: 1px solid var(--d25-color);
     border-radius: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    outline: none;
     &:hover {
         border: 1px solid var(--d50-color);
         }
+    &:focus {
+        border: 1px solid var(--d50-color);
+    }
 }
 
 input::-webkit-input-placeholder {

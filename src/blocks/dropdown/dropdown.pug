@@ -1,0 +1,33 @@
+block links 
+    link(rel="stylesheet", href="../../blocks/dropdown/css/dropdown.min.css")
+
+block content 
+    .dropdown
+        button(onclick="dropdownFunction()" class="dropbtn") Сколько гостей
+        .dropdown-content(id="dropbox")
+            .dropdown-wrapper 
+                .dropdown-wrapper__title Спальни
+                .dropdown-counter(id="counter")
+                    input(type="button" id="buttonCountMinus" value="-")
+                    div(id="buttonCountNumber") 2
+                    input(type="button" id="buttonCountPlus" value="+")
+                    input(type="hidden" value="1" id="num" name="num")
+                
+            .dropdown-wrapper 
+                .dropdown-wrapper__title Кровати
+                .dropdown-counter(id="counter")
+                    input(type="button" id="buttonCountMinus" value="-")
+                    div(id="buttonCountNumber") 2
+                    input(type="button" id="buttonCountPlus" value="+")
+                    input(type="hidden" value="1" id="num" name="num")
+                
+            .dropdown-wrapper 
+                .dropdown-wrapper__title Ванные комнаты
+                .dropdown-counter(id="counter")
+                    input(type="button" id="buttonCountMinus" value="-")
+                    div(id="buttonCountNumber") 0
+                    input(type="button" id="buttonCountPlus" value="+")
+                    input(type="hidden" value="1" id="num" name="num")
+                
+    
+    script(src="../../blocks/dropdown/js/dropdown.js")

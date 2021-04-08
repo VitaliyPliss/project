@@ -1,0 +1,111 @@
+.dropbtn {
+    background-color: transparent;
+    color: var(--d75-color);
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--d25-color);
+    border-radius: 4px 4px 0px 0px;
+    text-align: left;
+    padding-left: 14px;
+    outline: none;
+    &:focus {
+        border: 1px solid var(--d50-color);
+        background-color: transparent;
+    }
+    &:hover {
+        border: 1px solid var(--d50-color);
+        background-color: transparent;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        background: var(--d50-color);
+        height: 8px;
+        display: block;
+        width: 2px;
+        transform: rotate(45deg);
+        left: 246px;
+        top: 19px;
+    }
+    &:after {
+        content: "";
+        background: var(--d50-color);
+        height: 8px;
+        display: block;
+        width: 2px;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 19px;
+        left: 241px;
+    }
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 266px;
+    height: 44px;
+    
+    &-counter {
+        display: flex;
+    }
+    &-content {
+        display: none;
+        width: inherit;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 10px 10px 0px var(--d5-color);
+        border: 1px solid var(--d25-color);
+        border-radius: 0px 0px 4px 4px;
+        border-top: none;
+        z-index: 1;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 39px;
+        &__title {
+            
+            padding: 12px 14px;
+            text-decoration: none;
+            display: block;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#buttonCountMinus, #buttonCountPlus {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--d25-color);
+    font-size: 22px;
+}
+#buttonCountMinus {
+    margin-right: 12px;
+}
+
+#buttonCountPlus {
+    margin-right: 6px;
+}
+
+#buttonCountNumber {
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+
+.show {
+    display:block;
+}
