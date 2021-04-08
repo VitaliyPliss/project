@@ -1,4 +1,4 @@
-.content {
+.checkbox-buttons__content {
     display: block;
     position: relative;
     padding-left: 31px;
@@ -15,22 +15,22 @@
         cursor: pointer;
         height: 0;
         width: 0;
-        &:checked ~ .checkmark {
+        &:checked ~ .checkbox-buttons__checkmark {
             background-color: #fff;
             }
         
-        &:hover input ~ .checkmark {
+        &:hover input ~ .checkbox-buttons__checkmark {
             background-color: #fff;
             }
         
-        &:checked ~ .checkmark {
+        &:checked ~ .checkbox-buttons__checkmark {
             &:after {
                 display: block;
             }
         }
     }
 }
-.checkmark {
+.checkbox-buttons__checkmark {
     position: absolute;
     top: -1px;
     left: 0;
