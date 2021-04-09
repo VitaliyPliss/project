@@ -1,11 +1,11 @@
 .footer {
     min-height: 443px;
-    &__grid {
+    &-grid {
         margin-top: 86px;
         display: grid;
         grid-template-columns: 300px 1fr 1fr 1fr 260px;
     }
-    &__block {
+    &-block {
         position: relative;
         height: 168px;
         justify-items: start;
@@ -22,13 +22,13 @@
                 font-size: 12px;
             }
         }
-        &-input {
+        &__input {
             margin-top: 22px;
             width: 260px;
             height: 44px;
             padding-left: 14px;
         }
-        &-btn {
+        &__btn {
             position: absolute;
             top: 122px;
             left: 216px;
@@ -38,7 +38,7 @@
             background: transparent;
             z-index: 10;
         }
-        &-logo {
+        &__logo {
             margin-top: 14px;
             margin-bottom: -4px;
         }
@@ -54,20 +54,26 @@
         position: absolute;
         left: -140px;
     }
-    &__flex {
+    &-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 70px;
     }
-    &__bottom {
+    &-bottom {
         margin-top: 119px;
     }
-    &__socials {
-        &-item {
-            width: 23px;
-            height: 23px;
-            margin-left: 21px;
+    &-socials {
+        i {
+            background-clip: initial;
+            font-size: 24px;
+            background: var(--lg-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: var(--p-color);
+        }
+        &__item {
+            margin-left: 23px;
             margin-top: 3px;
         }
     }
