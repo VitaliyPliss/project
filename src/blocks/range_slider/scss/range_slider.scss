@@ -1,0 +1,89 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.r-slider {
+    width: 266px;
+}
+.r-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.r-slider__inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.r-slider__label {
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+.r-slider__text {
+	font-size: 12px;
+}
+
+.r-slider__text:first-child {
+	margin-right: 2px;
+}
+
+.r-slider__text:last-child {
+	margin-right: 2px;
+}
+
+.r-slider__input {
+	border: none;
+	font-size: 12px;
+    width: 40px;
+}
+
+.r-slider__title {
+	margin-bottom: 20px;
+}
+
+.r-slider__slider {
+	margin-bottom: 20px;
+}
+
+.noUi-connect {
+	background: var(--lg2-color);
+    border: none;
+}
+
+.noUi-target {
+	background-color: transparent;
+    border: 1px solid var(--d25-color);
+    border-radius: 4px;
+    height: 6px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+	display: none;
+}
+
+.noUi-handle {
+	box-shadow: none;
+	border-radius: 100%;
+	background: var(--lg2-color);
+    border: 2px solid #fff;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    right: -15px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+	right: 0;
+}
