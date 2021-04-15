@@ -82,16 +82,19 @@
     }
     &__autorization {
         margin-left: 20px;
+        display: flex;
         &-button1 {
             width: 87px;
             height: 34px;
             font-size: 12px;
+            padding-top: 0px;
         }
         &-button2 {
             width: 196px;
             height: 34px;
             margin-left: 20px;
             font-size: 12px;
+            padding-top: 0px;
         }
         
     }
