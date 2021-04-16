@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__logo {
-        &-img {
+    &-logo {
+        &__img {
             padding-top: 6px;
         }
     }
@@ -61,17 +61,17 @@
         }
     }
 
-    &__wrapper {
+    &-wrapper {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    &__menu {
-        &-list {
+    &-menu {
+        &__list {
             display: flex;
             list-style-type: none;
         }
-        &-item {
+        &__item {
             text-decoration: none;
             margin-left: 20px;
             position: relative;
@@ -80,23 +80,40 @@
             }
         }
     }
-    &__autorization {
+    &-autorization {
         margin-left: 20px;
         display: flex;
-        &-button1 {
-            width: 87px;
-            height: 34px;
-            font-size: 12px;
-            padding-top: 0px;
+    &__log {
+        width: 87px;
+        height: 34px;
+        font-size: 12px;
+        padding-top: 0px;
         }
-        &-button2 {
-            width: 196px;
-            height: 34px;
-            margin-left: 20px;
-            font-size: 12px;
-            padding-top: 0px;
+    &__reg {
+        width: 196px;
+        height: 34px;
+        margin-left: 20px;
+        font-size: 12px;
+        padding-top: 0px;
         }
-        
     }
+}
 
+.small__wrapper {
+    width: 87px;
+    height: 34px;
+}
+
+.small__gradient-border {
+    width: 88px;
+    height: 34px;
+    span {
+        width: 84px;
+        height: 30px; 
+    }
+}
+
+.small__btn {
+    top: -5px;
+    left: -5px;
 }

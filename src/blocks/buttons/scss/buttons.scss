@@ -1,4 +1,4 @@
-.btn {
+button {
     display: block;
     position: relative;
     width: 99px;
@@ -9,8 +9,11 @@
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
-    font-size: 11px;
-    padding-top: 8px;
+    font-size: 12px;
+}
+
+.btn {
+    
     &__1 {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         color: #fff;
@@ -44,18 +47,30 @@
         width: 320px;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         color: #fff;
-        font-size: 12px;
-        padding-top: 10px;
         &:hover {
             opacity: 0.5;
         }
-        &-wrapper {
-            position: relative;
-        }
-        &-img {
+        &:after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            background-color: transparent;
+            left: -9px;
             position: absolute;
-            top: 13px;
-            left: 289px;
+            top: 22px;
+            left: 292px;
+            -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(225deg);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 21px;
+            left: 290px;
+            width: 14px;
+            border-bottom: 2px solid #fff;
         }
     }
 }
@@ -63,7 +78,6 @@
 .gradient-border {
     width: 99px;
     height: 44px;
-    text-align: center;
     border-radius: 25px;
     background: var(--lg-color);
     position: relative;

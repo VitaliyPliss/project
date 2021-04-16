@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__logo {
-        &-img {
+    &-logo {
+        &__img {
             padding-top: 6px;
         }
     }
@@ -61,17 +61,17 @@
         }
     }
 
-    &__wrapper {
+    &-wrapper {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    &__menu {
-        &-list {
+    &-menu {
+        &__list {
             display: flex;
             list-style-type: none;
         }
-        &-item {
+        &__item {
             text-decoration: none;
             margin-left: 20px;
             position: relative;

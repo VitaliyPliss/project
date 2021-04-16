@@ -5,21 +5,24 @@ block content
     section.header 
         .container 
             .navbar 
-                .navbar__logo
-                    img.navbar__logo-img(src="../../blocks/header_guest/icons/logo.svg", alt="#")
-                .navbar__wrapper
-                    .navbar__menu
-                        ul.navbar__menu-list
+                .navbar-logo
+                    img.navbar-logo__img(src="../../blocks/header_guest/icons/logo.svg", alt="#")
+                .navbar-wrapper
+                    .navbar-menu
+                        ul.navbar-menu__list
                             li
-                                a(href="#").navbar__menu-item <span> О нас </span> 
+                                a(href="#").navbar-menu__item <span> О нас </span> 
                             li
-                                a(href="#").navbar__menu-item.navbar__services Услуги
+                                a(href="#").navbar-menu__item.navbar__services Услуги
                             li 
-                                a(href="#").navbar__menu-item Вакансии 
+                                a(href="#").navbar-menu__item Вакансии 
                             li 
-                                a(href="#").navbar__menu-item Новости 
+                                a(href="#").navbar-menu__item Новости 
                             li 
-                                a(href="#").navbar__menu-item.navbar__agreements Соглашения   
-                    .navbar__autorization
-                        button.navbar__autorization-button1.btn2 войти
-                        button.navbar__autorization-button2.btn1 зарегистрироваться
+                                a(href="#").navbar-menu__item.navbar__agreements Соглашения
+                    .navbar-autorization
+                        .navbar-autorization__log
+                            .btn__2-wrapper.small__wrapper
+                                .gradient-border.small__gradient-border <span></span>
+                                button.btn__2.small__btn Войти
+                        button.navbar-autorization__reg.btn__1 Зарегистрироваться
