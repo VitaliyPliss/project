@@ -22,12 +22,6 @@
                 font-size: 12px;
             }
         }
-        &__input {
-            margin-top: 22px;
-            width: 260px;
-            height: 44px;
-            padding-left: 14px;
-        }
         &__btn {
             position: absolute;
             top: 122px;
@@ -45,6 +39,11 @@
     }
     &__text {
         margin-top: 14px;
+    }
+    &-stx{
+        margin-top: 22px;
+        width: 260px;
+        height: 44px;
     }
     &__divider {
         margin-top: 118px;

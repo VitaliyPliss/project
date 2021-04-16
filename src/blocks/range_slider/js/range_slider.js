@@ -36,3 +36,8 @@ if (rangeSlider) {
 	});
 }
 
+const autosizeInput = require('autosize-input');
+ 
+autosizeInput(document.querySelector('#input-0'));
+autosizeInput(document.querySelector('#input-1'));
+
