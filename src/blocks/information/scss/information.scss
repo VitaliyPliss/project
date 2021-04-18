@@ -1,0 +1,27 @@
+.information {
+    display: flex;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    &-convenience {
+        margin-left: 3px;
+    }
+    &-cosiness {
+        padding-top: 18px;
+    }
+    &__img {
+        padding-top: 4px;
+        &-cosiness {
+            padding-left: 3px;
+        }
+    }
+    &-wrapper {
+        margin-left: 15px;
+        &-cosiness {
+            padding-top: 3px;
+            margin-left: 18px;
+        }
+    }
+    &__header {
+        font-weight: 700;
+    }
+}
