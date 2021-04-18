@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,kBAAO,AAAC,CACJ,eAAe,CAAE,IAAI,CACrB,QAAQ,CAAE,QAAQ,CAClB,cAAc,CAAE,IAAI,CAYvB,AAfA,AAIG,kBAJG,AAIF,QAAQ,AAAC,CACN,OAAO,CAAE,GAAG,CACZ,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,GAAG,CACR,IAAI,CAAE,KAAK,CACX,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,gBAAgB,CAE/B",
+    "sources": [
+        "../scss/bullet_list.scss"
+    ],
+    "names": [],
+    "file": "bullet_list.min.css"
+}
