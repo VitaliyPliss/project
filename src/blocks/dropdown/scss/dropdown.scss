@@ -29,8 +29,8 @@
         display: block;
         width: 2px;
         transform: rotate(45deg);
-        left: 246px;
-        top: 19px;
+        left: 244px;
+        top: 18px;
     }
     &:after {
         content: "";
@@ -40,8 +40,8 @@
         width: 2px;
         transform: rotate(135deg);
         position: absolute;
-        top: 19px;
-        left: 241px;
+        top: 18px;
+        left: 240px;
     }
 }
 
@@ -55,10 +55,12 @@
     
     &-counter {
         display: flex;
+        padding-top: 4px;
     }
     &-content {
         display: none;
         width: inherit;
+        height: 119px;
         position: absolute;
         background-color: #fff;
         box-shadow: 0px 10px 10px 0px var(--d5-color);
@@ -71,10 +73,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 39px;
+        height: 37px;
         &__title {
-            
             padding: 12px 14px;
+            padding-top: 14px;
             text-decoration: none;
             display: block;
             font-weight: 700;
@@ -84,31 +86,26 @@
     }
 }
 
-#buttonCountMinus, #buttonCountPlus {
+.counter__btn {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid var(--d25-color);
-    font-size: 22px;
-}
-#buttonCountMinus {
-    margin-right: 12px;
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: 400;
+    padding-top: 4px;
 }
 
-#buttonCountPlus {
+.counter__value {
     margin-right: 6px;
-}
-
-#buttonCountNumber {
-    margin-right: 12px;
+    margin-left: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
-}
-
-
-
-.show {
-    display:block;
+    width: 16px;
+    border: none;
+    outline: none;
 }

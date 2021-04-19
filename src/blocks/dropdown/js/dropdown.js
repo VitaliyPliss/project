@@ -1,37 +1,34 @@
-function dropdownFunction() {
-    document.getElementById("dropbox").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+let flag = false;
+  $('.dropbtn').click(function () {
+    if(!flag){
+     $('.dropdown-content').slideDown();
+    }else{
+     $('.dropdown-content').slideUp();
     }
+    flag = !flag;
+  });
+
+  const counter = function () {
+    const btns = document.querySelectorAll('.counter__btn');
+  
+  
+    btns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        const direction = this.dataset.direction;
+        const inp = this.parentElement.querySelector('.counter__value');
+        const currentValue = +inp.value;
+        let newValue;
+  
+        if (direction === 'plus') {
+          newValue = currentValue + 1;
+        } else {
+          newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+        }
+  
+        inp.value = newValue;
+      })
+    })
+  
   }
-}
-
-let buttonCountPlus = document.getElementById("buttonCountPlus");
-let buttonCountMinus = document.getElementById("buttonCountMinus");
-let count = document.getElementById("buttonCountNumber");
-let count2 = document.getElementById("num");
-let number = 1;
-
-buttonCountPlus.onclick = function() {
-    if (number <= 3) {
-        number++;
-        count.innerHTML = number;
-    }
-};
-
-buttonCountMinus.onclick = function() {
-   if (number >= 1) {
-       number--;
-       count.innerHTML = number;
-    }
-}
+  
+  counter();
