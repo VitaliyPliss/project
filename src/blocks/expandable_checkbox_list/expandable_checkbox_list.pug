@@ -1,0 +1,33 @@
+block links 
+    link(rel="stylesheet", href="../../blocks/expandable_checkbox_list/css/expandable_checkbox_list.min.css")
+
+block content
+    .expcheckbox
+        button.expcheckbox-buttons expandable_checkbox_list
+        .expcheckbox-buttons-wrapper
+        
+            label.expcheckbox-buttons__content Завтрак
+                input(type="checkbox")
+                span.expcheckbox-buttons__checkmark 
+
+            label.expcheckbox-buttons__content Письменный стол
+                input(type="checkbox" checked="checked")
+                span.expcheckbox-buttons__checkmark
+
+            label.expcheckbox-buttons__content Стул для кормления
+                input(type="checkbox" checked="checked")
+                span.expcheckbox-buttons__checkmark
+        
+            label.expcheckbox-buttons__content Кроватка 
+                input(type="checkbox" checked="checked")
+                span.expcheckbox-buttons__checkmark 
+
+            label.expcheckbox-buttons__content Телевизор
+                input(type="checkbox")
+                span.expcheckbox-buttons__checkmark
+
+            label.expcheckbox-buttons__content Шампунь
+                input(type="checkbox")
+                span.expcheckbox-buttons__checkmark
+
+    script(src="../../blocks/expandable_checkbox_list/js/expandable_checkbox_list.js")
